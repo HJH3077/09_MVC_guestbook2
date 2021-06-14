@@ -1,4 +1,4 @@
-package com.ict.comtroller;
+package com.ict.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -33,7 +33,6 @@ public class MyController extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		
 		String cmd = request.getParameter("cmd");
-		System.out.println(cmd);
 		Command comm = null;
 		if(cmd.equalsIgnoreCase("list")) {
 			comm = new ListCommand();

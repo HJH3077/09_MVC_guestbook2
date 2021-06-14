@@ -41,7 +41,7 @@ input {
 	function update_ok(f) {
 		// 비밀번호 체크
 		if (f.pw.value == "${vo.pw}") {
-			f.action = "${pageContext.request.contextPath}/MyController?cmd=update_ok&idx=${vo.idx}&pw={vo.pw}";
+			f.action="${pageContext.request.contextPath}/MyController?cmd=update_ok&idx=${vo.idx}&pwd=${vo.pw}";
 			alert("수정완료");
 			f.submit();
 		} else {

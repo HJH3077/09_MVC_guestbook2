@@ -11,7 +11,7 @@ public class Delete_okCommand implements Command{
 		  String idx = request.getParameter("idx");
 		  int result = DAO.getInstance().getDelete(idx);
 		  if(result>0){ 
-			  return "view/list.jsp";
+			  return "MyController?cmd=list";
 		  }
 		
 		return null;
